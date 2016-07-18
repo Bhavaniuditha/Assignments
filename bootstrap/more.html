@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title></title>
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="includes/css/moreStyle.css" rel="stylesheet">
+<link rel="stylesheet" href="includes/css/font-awesome.min.css">
+  <link rel="stylesheet" href="includes/css/font-awesome.css">
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+  </head>
+  <body>
+<div class="container" id="main">
+
+  <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="images/logo_1.png" alt="Shopo"></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Home
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<strong class="caret"></strong>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">More</li>
+                <li><a href="#">Electonic Devices</a></li>
+                <li><a href="#">Home Decor</a></li>
+                <li><a href="#">Grocery</a></li>
+              </ul>
+              <!--end dropdown-menu-->
+            </li>
+            <!--end dropdown-->
+          </ul>
+          <form class="navbar-form navbar-left">
+            <input type="text" class="form-control" id="searchInput" placeholder="Search..">
+            <button ><span class="glyphicon glyphicon-search"></span></button>
+          </form>
+          <!--end navbar-form-->
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#myModal" role="button" data-toggle="modal">
+                <button class="btn btn-default"><span class="glyphicon glyphicon-user"></span>Sign up</button>
+              </a>
+            </li>
+            <li>
+              <a href="#myModal1" role="button" data-toggle="modal">
+                <button class="btn btn-default"><span class="glyphicon glyphicon-user"></span>Sign in</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--end container-->
+    </div>
+    <!--end navbar-->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="madal-title">Sign up</h4>
+          </div>
+          <!--end modal-header-->
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputName">Name
+                </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputName" placeholder="Name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputEmail">Email
+                </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputPassword">Password
+                </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputPassword" placeholder="Password" type="text">
+                  <button class="btn btn-success pull-right" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--end modal-body-->
+          <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+            <button class="btn btn-default" type="button">Save changes</button>
+          </div>
+          <!--end modal-footer-->
+        </div>
+        <!--end modal-content-->
+      </div>
+      <!--end modal-dialog-->
+    </div>
+    <!--end myModal-->
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="madal-title">Sign up</h4>
+          </div>
+          <!--end modal-header-->
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputEmail">Email
+                </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputPassword">Password
+                </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputPassword" placeholder="Password" type="text">
+                  <button class="btn btn-success pull-right" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--end modal-body-->
+        </div>
+        <!--end modal-content-->
+      </div>
+      <!--end modal-dialog-->
+    </div>
+    <!--end myModal1-->
+    <div class="row" id="features">
+      <h2>Men's wear</h2>
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Casual wear</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s1.jpg" alt="Women" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-warning btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Formal wear</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s2.jpg" alt="Men" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-info btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Festival wear</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s3.jpg" alt="Kids" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-success btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+    </div>
+    <!--end features-->
+    <div class="row" id="features">
+      <h2>Women's wear</h2>
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Festival wear</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s4.jpg" alt="Women" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-warning btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Casual wear</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s5.jpg" alt="Men" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-info btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Jeans</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s6.jpg" alt="Kids" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-success btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+    </div>
+    <!--end features-->
+    <div class="row" id="features">
+      <h2>Traditional wear</h2>
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Sarees</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s7.jpg" alt="Women" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-warning btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Sarees</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s8.jpg" alt="Men" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-info btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Sarees</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s9.jpg" alt="Kids" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-success btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+    </div>
+    <!--end features-->
+  <div class="row" id="features">
+      <h2>Kid's wear</h2>
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">For boys</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s10.jpg" alt="Women" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-warning btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">For Girls</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s11.jpg" alt="Men" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-info btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+      <div class="col-sm-4 feature">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Casual's</h3>
+          </div>
+          <!--end panel-heading-->
+          <img src="images/s12.jpg" alt="Kids" class="img-circle"><br>
+          <a href="" target="-blank" class="btn btn-success btn-small">View more
+          </a>
+        </div>
+        <!--end panel-->
+      </div>
+      <!--end feature-->
+    </div>
+    <!--end features-->
+  </div>
+  <!--end container-->
+</div><!<-- end container -->
+
+
+<footer>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-2">
+                      <h6>Copyright &copy; 2016 Shopo</h6>
+                    </div>
+                    <!-- end col-sm-2-->
+                    <div class="col-sm-4">
+                      <p>Shopo app is a Zero Fee Platform where you can chat, buy and sell – and it makes buying & selling super easy and fun!.</p>
+                    </div>
+                    <!-- end col-sm-4-->
+                    <div class="col-sm-2">
+                      <h6>Navigation</h6>
+                      <ul class="unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+                    <!-- end col-sm-2-->
+                    <div class="col-sm-2">
+                      <h6>Follow Us</h6>
+                      <ul class="unstyled">
+                        <li><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>  </a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        </a></li>
+                      </ul>
+                    </div>
+                    <!-- end col-sm-2-->
+                    <div class="col-sm-2">
+                      <h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Bhavani</h6>
+                    </div>
+                    <!-- end col-sm-2-->
+                  </div>
+                  <!--end row-->
+                </div>
+                <!--end container-->
+              </footer>
+              <!--end footer-->
+
+
+
+
+  <!-- All Javascript at the bottom of the page for faster page loading -->
+
+  <!-- First try for the online version of jQuery-->
+  <script src="http://code.jquery.com/jquery.js"></script>
+
+  <!-- If no online access, fallback to our hardcoded version of jQuery -->
+  <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+  <!-- Bootstrap JS -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="includes/js/script.js"></script>
+
+  </body>
+</html>
+
