@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+    <style>
+    svg {
+        padding-left: 20;
+    }
+    </style>
+</head>
+
+<body align="center">
+    <h1>Chicago Crime Data</h1>
+    <h2 style="color:blue;text-align: center">Pie chart</h2>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+    var width = 900,
+        height = 400,
+        radius = Math.min(width, height) / 2;
+
+    var color = d3.scale.ordinal()
+        .range(["#77ff33", "#4d4dff", "#00b38f", "#ff4d88"]);
+
+    var arc = d3.svg.arc()
+        .outerRadius(radius - 0)
+        .innerRadius(radius - 200);
+    d3.json("allcrime.json", function(error, data) {
+        var pie = d3.layout.pie()
+            .sort(null)
+            .value(function(d) {
+                return d.Value;
+            });
+
+
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+        var g = svg.selectAll(".arc")
+            .data(pie(data))
+            .enter().append("g")
+            .attr("class", "arc");
+
+        g.append("path")
+            .attr("d", arc)
+            .style("fill", function(d) {
+                return color(d.data.key);
+            });
+
+        g.append("text")
+            .attr("transform", function(d) {
+                return "translate(" + arc.centroid(d) + ")";
+            })
+            .attr("dy", ".35em")
+            .style("text-anchor", "middle")
+            .text(function(d) {
+                return d.data.key;
+            });
+    });
+    </script>
+</body>
+
+</html>
