@@ -18,25 +18,21 @@
         font-size: 14px;
         font-weight: bold;
     }
-
-    svg {
-        background: #eee;
-    }
     </style>
 </head>
 
 <body align="center">
-    <h1>Chicago Crime Data</h1>
     <div class="container">
         <div class="jumbotron">
-            <h2 style="color:orange">Multi line chart for Assault</h2>
-            <svg id="visualisation" width="800" height="550"></svg>
+            <h2>Chicago Crime Data For Assault Cases</h2>
+            <h2 style="color:orange">Multi line chart</h2>
+            <svg id="visualisation" width="900" height="500"></svg>
             <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
             <script>
             var data;
 
             function InitChart() {
-                d3.json("assault.json", function(jsonData) {
+                d3.json("../json/assault.json", function(jsonData) {
                     data = jsonData;
 
                     console.log('Data is: ', data[0]);

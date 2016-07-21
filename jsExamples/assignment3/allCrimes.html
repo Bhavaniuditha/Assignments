@@ -12,7 +12,8 @@
 </head>
 
 <body align="center">
-    <h1>Chicago Crime Data</h1>
+<div class="container">
+    <h1>Chicago Crime Data for Different Crimes</h1>
     <h2 style="color:blue;text-align: center">Pie chart</h2>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script>
@@ -26,7 +27,9 @@
     var arc = d3.svg.arc()
         .outerRadius(radius - 0)
         .innerRadius(radius - 200);
-    d3.json("allcrime.json", function(error, data) {
+        var d=[];
+    d3.json("../json/allcrime.json", function(error, data) {
+        console.log(data.length);
         var pie = d3.layout.pie()
             .sort(null)
             .value(function(d) {
@@ -63,6 +66,7 @@
             });
     });
     </script>
+    </div><!--end container-->
 </body>
 
 </html>
