@@ -1,0 +1,64 @@
+footer {
+    background: #333;
+    color: #eee;
+    font-size: 11px;
+    padding: 20px;
+}
+
+footer h6 {
+    text-align: left;
+}
+
+ul.unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+li.unstyled {
+    width: 20px;
+    height: 40px;
+}
+
+#features {
+    text-align: center;
+}
+
+#features img {
+    margin: 0 0 20px;
+}
+
+.panel {
+    border: solid #eee;
+}
+
+.panel-heading {
+    background: #eee;
+}
+
+#searchInput {
+    width: 150px;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+#space {
+    margin-top: 15px;
+}
+
+.navbar-form {
+    padding-top: 8px;
+}
+
+.form-control {
+    display: inline;
+}
+
+#inputPassword {
+    margin-bottom: 5px;
+}
+
+body {
+    margin-top: 60px;
+}

@@ -32,10 +32,10 @@
             var data;
 
             function InitChart() {
-                d3.json("../json/assault.json", function(jsonData) {
+                d3.json("./json/assault.json", function(jsonData) {
                     data = jsonData;
 
-                    console.log('Data is: ', data[0]);
+                    //console.log('Data is: ', data[0]);
 
                     var dataGroup = d3.nest()
                         .key(function(d) {

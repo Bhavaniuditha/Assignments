@@ -1,0 +1,29 @@
+h1
+{
+  font-family: monospace;;
+  text-align: center;
+
+}
+h2
+{
+  font-family: monospace;
+  color: blue;
+}
+
+h3
+{
+  font-family: monospace;;
+  color: orange;
+}
+
+a
+{
+  font-family: arial;
+  text-align: right;
+  color:red;
+}
+div{
+  background-color: aqua;
+  color:green;
+  font-size: 20px;
+}

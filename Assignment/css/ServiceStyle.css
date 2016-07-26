@@ -1,0 +1,141 @@
+header li {
+    list-style: none;
+    display: inline;
+    padding-right: 20px;
+    padding-left: 5px;
+}
+
+header a {
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+header a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.selected {
+    color: black;
+}
+
+header h1 {
+    font-size: 50px;
+    font-style: bold;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: -5px;
+    text-align: left;
+    color: yellow;
+    text-shadow: 10px 10px 7px blue;
+}
+
+footer {
+    margin-top: 850px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: rgb(127, 255, 212);
+    color: blue;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navigation {
+    padding-top: 28px;
+    padding-bottom: 22px;
+}
+
+header {
+    position: fixed;
+    background: rgb(127, 255, 212);
+}
+
+.firstrow {
+    margin-top: 75px;
+}
+
+section.grid_4 {
+    margin-top: 10px;
+}
+
+
+/* section.grid_6{
+    margin-bottom: 40px;
+} */
+
+
+/*
+. footer p{
+    margin-top: 900px;
+}  */
+
+.firstrow h1 {
+    font-family: monospace;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 10px brown;
+}
+
+.firstrow h3 {
+    font-family: 'Josefin Slab', serif;
+    color: blue;
+}
+
+.firstrow p {
+    font-family: 'Slabo 60px', serif;
+}
+
+.firstrow h1,
+h3,
+p {
+    text-align: center;
+}
+
+.firstrow {
+    background: #efefee;
+}
+
+.socialicons li {
+    display: inline;
+}
+
+.socialicons a:hover {
+    font-size: 10px;
+}
+
+.page {
+    background-color: rgb(230, 230, 250);
+}
+
+.secondrow {
+    margin-top: 500px;
+    margin-bottom: 20px;
+}
+
+.secondrow h1 {
+    font-family: cursive;
+    text-shadow: 5px 5px 10px red;
+    font-size: 40px;
+    color: Brown;
+    padding-right: 200px;
+    text-align: center;
+}
+
+.secondrow h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: cursive;
+    color: green;
+    text-shadow: 5px 5px 10px red;
+}
+
+.secondrow p {
+    margin-top: -50px;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+
+.thirdrow {
+    margin-bottom: -420px;
+}

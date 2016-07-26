@@ -1,0 +1,12 @@
+body
+{
+  background: pink;
+  width:600px;
+  margin:auto;
+  padding:auto;
+}
+blockquote{
+  border: 2px solid white;
+  margin:1em;
+  text-align: center;
+}

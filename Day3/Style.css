@@ -1,0 +1,30 @@
+body{
+  background:#efefee;
+}
+.d1{
+  background: aqua;
+  min-width: 600px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+h1{
+  text-align: center;
+}
+.d2,aside{
+  height: 500px;
+}
+.d2{
+  background: brown;
+  float: left;
+  width:70%;
+}
+aside{
+  background: green;
+  float: left;
+  width: 30%;
+}
+aside ul{
+  list-style: none;
+  padding-left: 14px
+}
