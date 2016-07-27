@@ -16,6 +16,15 @@ td {
     margin-bottom: 10px;
 }
 
+#email,
+#email2 {
+    margin-bottom: 10px;
+}
+
+.pull-right {
+    margin-left: 10px;
+}
+
 
 /* --------------------------------------
    Media Queries
@@ -32,9 +41,6 @@ td {
 /* Landscape phone to portrait tablet */
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 20px;
-    }
     #find {
         width: 150px;
         height: 25px;

@@ -19,28 +19,25 @@
 <body>
     <div class="container" id="main">
         <div class="navbar-header">
-            <h1>CRUD operations</h1>
+            <h2>CRUD operations</h2>
         </div>
         <div class="row">
-            <div id="part1" action="#" class="col-xs-12">
-                <center>
-                    <input type="text" id="find">
-                    <button id="content" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> search</button>
-                </center>
+            <div id="part1" class="col-xs-12">
+                <input type="text" id="find">
+                <button id="content" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> search</button>
             </div>
         </div>
         <!--end navbar-header-->
         <div id="part2">
-            <center>
-                <button id="tblData" class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span> View</button>
-                <a href="#myModal" role="button" data-toggle="modal">
-                    <button class="btn btn-warning" id="add"><span class="glyphicon glyphicon-pencil"></span> Add</button>
-                </a>
-            </center>
+            <button id="tblData" class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span> View</button>
+            <a href="#myModal" role="button" data-toggle="modal">
+                <button class="btn btn-warning" id="add"><span class="glyphicon glyphicon-pencil"></span> Add</button>
+            </a>
         </div>
         <div class="row" id="row1">
             <div class="col-sm-12">
-                <table id="tbl" border="black" class="table sr-only">
+                <table id="tbl" border="black" class="table">
+
                     <th>ID
                     </th>
                     <th>NAME
@@ -51,35 +48,24 @@
                     </th>
                     <th>EMAIL
                     </th>
-                    <th>functions
+                    <th>FUNCTIONS
                     </th>
+
+                <tbody id="tblBody">
+                </tbody>
                 </table>
             </div>
             <!--end col-xs-12-->
         </div>
         <!--end row1-->
-        <div class="row">
-            <div class="col-sm-12">
-                <table id="tb2" border="black" class="table sr-only">
-                    <th>ID
-                    </th>
-                    <th>NAME
-                    </th>
-                    <th>GENDER
-                    </th>
-                    <th>COMPANY
-                    </th>
-                    <th>EMAIL
-                    </th>
-                    <th>functions
-                    </th>
-                </table>
-            </div>
-            <!--end col-xs-12-->
-        </div>
-        <!--end row-->
     </div>
     <!--end container-->
+    <nav aria-label="Page navigation">
+  <ul class="pager">
+    <li><a id="prev">Previous</a></li>
+    <li><a id="searchNext">Next</a></li>
+  </ul>
+</nav>
     <div class="modal fade" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -89,34 +75,27 @@
                 </div>
                 <!--end modal-header-->
                 <div class="modal-body">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" id="formAdd">
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="name">Name
-                            </label>
                             <div class="col-lg-10">
                                 <input class="form-control" id="name" placeholder="name" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="gender">Gender
-                            </label>
                             <div class="col-lg-10">
                                 <input class="form-control" id="gender" placeholder="gender" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="company">Company
-                            </label>
                             <div class="col-lg-10">
                                 <input class="form-control" id="company" placeholder="company" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="email">Email
-                            </label>
                             <div class="col-lg-10">
                                 <input class="form-control" id="email" placeholder="email" type="email">
-                                <button id="sbmt" type="submit" class="btn btn-success pull-right">Submit</button>
+                                <button type="submit" class="btn btn-primary pull-right" data-dismiss="modal">Cancel</button>
+                                <button id="sbmt" type="submit" required="true" class="btn btn-success pull-right" onsubmit="return(validateForm())";>Submit</button>
                             </div>
                         </div>
                     </form>
@@ -137,40 +116,26 @@
                 </div>
                 <!--end modal-header-->
                 <div class="modal-body">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" id="formEdit">
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="id2">Id
-                            </label>
-                            <div class="col-lg-10">
-                                <input class="form-control" id="id2" placeholder="id" type="text">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="name2">Name
-                            </label>
                             <div class="col-lg-10">
                                 <input class="form-control" id="name2" placeholder="name" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="gender2">Gender
-                            </label>
                             <div class="col-lg-10">
                                 <input class="form-control" id="gender2" placeholder="gender" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="company2">Company
-                            </label>
                             <div class="col-lg-10">
                                 <input class="form-control" id="company2" placeholder="company" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label" for="email2">Email
-                            </label>
                             <div class="col-lg-10">
                                 <input class="form-control" id="email2" placeholder="email" type="email">
+                                <button type="submit" class="btn btn-primary pull-right" data-dismiss="modal">Cancel</button>
                                 <button id="sbmt2" type="submit" class="btn btn-success pull-right">Submit</button>
                             </div>
                         </div>
