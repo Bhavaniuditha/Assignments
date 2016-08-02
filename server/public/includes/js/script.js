@@ -6,8 +6,6 @@ $(document).ready(function() {
             method: "GET",
             url: 'http://localhost:8080/users',
             success: function(data) {
-                len=data.length-1;
-                console.log(len);
             }});
     $('#searchNext').hide();
     $('#prev').hide();
@@ -26,6 +24,7 @@ $(document).ready(function() {
                 });
                 $('#tblBody').empty();
                 $('#searchNext').hide();
+                $('#prev').hide();
                 $('#tblBody').append(t);
             }
         });
@@ -70,7 +69,7 @@ $(document).ready(function() {
                         data[i].gender + '</td>' + '<td id="company1">' + data[i].company + '</td>' + '<td id="email1">' +
                         data[i].email + '</td>' + '<td>' + '<a href="#myModal1" role="button" data-toggle="modal"><button class="edit btn btn-primary"type="button" id="editId" ><span class="glyphicon glyphicon-edit"></span>  Edit</button></a>' +
                         '  ' + '<button class="delete btn btn-danger" type="button" id="deleteId"><span class="glyphicon glyphicon-trash"></span>  Delete</button>' + '</td></tr>'
-                len1=data.length;;});
+                });
                 $('#tblBody').empty();
                 $('#tblBody').append(t);
 
@@ -220,4 +219,3 @@ $(document).ready(function() {
 }*/
 
 });
-

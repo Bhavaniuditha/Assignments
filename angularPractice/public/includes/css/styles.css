@@ -1,0 +1,15 @@
+th,
+td,
+tr {
+    padding: 10px 10px;
+}
+#email{
+    margin-bottom: 10px;
+}
+.pull-right {
+    margin-left: 10px;
+}
+table
+{
+  margin-top: 10px;
+}
